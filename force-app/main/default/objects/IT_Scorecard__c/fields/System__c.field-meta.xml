@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Identify all systems involved in or impacted by the project.</inlineHelpText>
+    <label>System(s)</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Application__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>System Epicor</fullName>
+                <default>false</default>
+                <label>System Epicor</label>
+            </value>
+            <value>
+                <fullName>System Epicor2</fullName>
+                <default>false</default>
+                <label>System Epicor2</label>
+            </value>
+            <value>
+                <fullName>System Vision</fullName>
+                <default>false</default>
+                <label>System Vision</label>
+            </value>
+            <value>
+                <fullName>System Vision2</fullName>
+                <default>false</default>
+                <label>System Vision2</label>
+            </value>
+            <value>
+                <fullName>System Infrastructure</fullName>
+                <default>false</default>
+                <label>System Infrastructure</label>
+            </value>
+            <value>
+                <fullName>System Infrastructure2</fullName>
+                <default>false</default>
+                <label>System Infrastructure2</label>
+            </value>
+            <value>
+                <fullName>System Optics/Lens</fullName>
+                <default>false</default>
+                <label>System Optics/Lens</label>
+            </value>
+            <value>
+                <fullName>System Optics/Lens2</fullName>
+                <default>false</default>
+                <label>System Optics/Lens2</label>
+            </value>
+            <value>
+                <fullName>System Data Initiative</fullName>
+                <default>false</default>
+                <label>System Data Initiative</label>
+            </value>
+            <value>
+                <fullName>System Data Initiative2</fullName>
+                <default>false</default>
+                <label>System Data Initiative2</label>
+            </value>
+            <value>
+                <fullName>System 2</fullName>
+                <default>false</default>
+                <label>System 2</label>
+            </value>
+            <value>
+                <fullName>System 3</fullName>
+                <default>false</default>
+                <label>System 3</label>
+            </value>
+            <value>
+                <fullName>ServiceMax</fullName>
+                <default>false</default>
+                <label>ServiceMax</label>
+            </value>
+            <value>
+                <fullName>ServiceMax Go App</fullName>
+                <default>false</default>
+                <label>ServiceMax Go App</label>
+            </value>
+            <value>
+                <fullName>ServiceMax Go Desktop</fullName>
+                <default>false</default>
+                <label>ServiceMax Go Desktop</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>CPQ</fullName>
+                <default>false</default>
+                <label>CPQ</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ServiceMax/Salesforce</controllingFieldValue>
+            <valueName>ServiceMax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ServiceMax/Salesforce</controllingFieldValue>
+            <valueName>ServiceMax Go App</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ServiceMax/Salesforce</controllingFieldValue>
+            <valueName>ServiceMax Go Desktop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ServiceMax/Salesforce</controllingFieldValue>
+            <valueName>Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ServiceMax/Salesforce</controllingFieldValue>
+            <valueName>CPQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optics-Lens</controllingFieldValue>
+            <valueName>System Optics/Lens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optics-Lens</controllingFieldValue>
+            <valueName>System Optics/Lens2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Epicor</controllingFieldValue>
+            <valueName>System Epicor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Epicor</controllingFieldValue>
+            <valueName>System Epicor2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ERP Project</controllingFieldValue>
+            <valueName>System 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ERP Project</controllingFieldValue>
+            <valueName>System 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Initiative</controllingFieldValue>
+            <valueName>System Data Initiative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Initiative</controllingFieldValue>
+            <valueName>System Data Initiative2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vision</controllingFieldValue>
+            <valueName>System Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vision</controllingFieldValue>
+            <valueName>System Vision2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>System Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>System Infrastructure2</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

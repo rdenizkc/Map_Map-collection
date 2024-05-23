@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stakeholders_Field_Validation_1</fullName>
+    <active>true</active>
+    <description>If &apos;All Users&apos; multi-picklist value is selected on Stakeholder(s) field, users cannot choose other values.</description>
+    <errorConditionFormula>(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; INCLUDES(Stakeholders__c, &quot;Commercial&quot;) )||
+(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; INCLUDES(Stakeholders__c, &quot;Accounting&quot;) )||
+(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; INCLUDES(Stakeholders__c, &quot;Field Services&quot;) )||
+(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; INCLUDES(Stakeholders__c, &quot;Last Mile&quot;) )||
+(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; INCLUDES(Stakeholders__c, &quot;System Administrators&quot;) ) ||
+(INCLUDES(Stakeholders__c, &quot;All Users&quot;) &amp;&amp; 
+INCLUDES(Stakeholders__c, &quot;Operation&quot;))</errorConditionFormula>
+    <errorDisplayField>Stakeholders__c</errorDisplayField>
+    <errorMessage>If &apos;All Users&apos; value is selected, other values cannot be selected.</errorMessage>
+</ValidationRule>

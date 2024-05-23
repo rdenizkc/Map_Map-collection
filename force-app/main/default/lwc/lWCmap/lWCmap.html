@@ -1,0 +1,120 @@
+<template>
+    <lightning-card title=" Map methods">
+        <template if:true={mapOfValues}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div title="Key">Key (Key)</div>
+                        </th>
+                        <th scope="col">
+                            <div title="Value">City Name (Value)</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={mapOfValues} for:item="keyValue">
+                        <tr key={keyValue.key}>
+                            <th scope="col">
+                                <div>{keyValue.key}</div>
+                            </th>
+                            <th scope="col">
+                                <div>{keyValue.value}</div>
+                            </th>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+
+        <template if:true={mapOfValue}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered">
+                <thead>
+                    <tr class="slds-text-title_caps">
+
+                        <th scope="col">
+                            <div title="Key">Key (Key)</div>
+                        </th>
+                        <th scope="col">
+                            <div title="Value">City Name (Value)</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={mapOfValues1} for:item="mapKey">
+                        <tr key={mapKey.key}>
+                            <th scope="col">
+                                <div title={mapKey.key}>{mapKey.key}</div>
+                            </th>
+                            <th scope="col">
+                                <div title={mapKey.value}>{mapKey.value}</div>
+                            </th>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+        <template if:true={getData}>
+            <P>Value:- {getValue}</P>
+        </template>
+    </lightning-card>
+
+
+    <lightning-button variant="success" label="Put Method" onclick={updateMap}> </lightning-button>
+    <lightning-button variant="success" label="Get Method" title="Get action" onclick={getMap} > </lightning-button>
+    <template if:true={popUp}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+            aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close">
+                        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Modal header</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <article class="slds-card">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                        <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+                                    </svg>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <form>
+                            <div class="slds-card__body slds-card__body_inner">
+                                <form>
+                                    <lightning-input type="number" label="Enter Key" onchange={inputKey}>
+                                    </lightning-input>
+                                    <template if:true={notValue}>
+                                    <lightning-input type="text"  label="Enter Value" onchange={inputValue}>
+                                    </lightning-input></template>
+                                </form>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+                <footer class="slds-modal__footer">
+                    <template if:true={putButton}>
+                    <lightning-button variant="success" label="Put Method" title="Put action" onclick={putClick}
+                        class="slds-m-left_x-small"></lightning-button></template>
+                        <template if:true={getButton}>
+                            <lightning-button variant="success" label="Get Method" title="Put action" onclick={getClick}
+                                class="slds-m-left_x-small"></lightning-button></template>
+        
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

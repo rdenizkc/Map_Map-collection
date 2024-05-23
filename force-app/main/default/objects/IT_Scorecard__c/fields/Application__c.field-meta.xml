@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application__c</fullName>
+    <externalId>false</externalId>
+    <label>Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ServiceMax/Salesforce</fullName>
+                <default>false</default>
+                <label>ServiceMax/Salesforce</label>
+            </value>
+            <value>
+                <fullName>Optics-Lens</fullName>
+                <default>false</default>
+                <label>Optics-Lens</label>
+            </value>
+            <value>
+                <fullName>Epicor</fullName>
+                <default>false</default>
+                <label>Epicor</label>
+            </value>
+            <value>
+                <fullName>ERP Project</fullName>
+                <default>false</default>
+                <label>ERP Project</label>
+            </value>
+            <value>
+                <fullName>Data Initiative</fullName>
+                <default>false</default>
+                <label>Data Initiative</label>
+            </value>
+            <value>
+                <fullName>Vision</fullName>
+                <default>false</default>
+                <label>Vision</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
