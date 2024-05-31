@@ -2,3 +2,18 @@
     max-height: 60vh;
     overflow-y: auto;
 }
+.custom-marker-blue {
+   url: url('/lightning/setup/StaticResources/page?address=%2F081Hu0000028IH8'); /* Adjust the URL to match your uploaded icon */
+    height: 30px;
+    width: 30px;
+}
+
+.custom-marker-green {
+   url: url('/lightning/setup/StaticResources/page?address=%2F081Hu0000028IH3'); /* Adjust the URL to match your uploaded icon */
+    height: 30px;
+    width: 30px;
+}
+
+.my-custom-map {
+    background-color: #dbf5f9; /* Arka plan rengini istediğiniz renge ayarlayın */
+}

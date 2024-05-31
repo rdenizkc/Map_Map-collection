@@ -1,0 +1,48 @@
+<template>
+  <lightning-card icon-name="standard:location" class="slds-m-around_small" title="Violation Map">
+      <div class="slds-m-around_medium">
+
+
+
+
+          <lightning-combobox
+              name="type"
+              label="Violation Type"
+              value={typeVal}
+              onchange={handleTypeChange}
+              placeholder="Violation Type"
+              options={Valoptions}
+          ></lightning-combobox>
+
+          <lightning-combobox
+              name="country"
+              label="Country"
+              value={countryVal}
+              onchange={handleCountryChange}
+              placeholder="Country"
+              options={countryOptions}
+          ></lightning-combobox> <br>
+
+          <lightning-button
+          class="slds-m-bottom_medium"
+              label="Clear"
+              onclick={clearInputs}
+              variant= "brand"
+              
+          ></lightning-button>
+      </div>
+    
+<div class="sldx box">
+   <strong>Total:</strong> 45
+</div>
+
+      <div>
+          <lightning-map 
+              center={center}
+              map-markers={mapMarkers}
+              zoom-level="2"
+              list-view={listView}
+          ></lightning-map>
+      </div>
+  </lightning-card>
+</template>
